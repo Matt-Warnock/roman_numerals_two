@@ -50,4 +50,21 @@ class RomanNumeralsTest {
 
         assertEquals("X", result);
     }
+
+    @Test
+    @DisplayName("converts 15 to XV")
+    void convertFifteen() {
+        String result = RomanNumerals.convert(15);
+
+        assertEquals("XV", result);
+    }
+
+
+    @Test
+    @DisplayName("converts 20 to XX")
+    void convertTwenty() {
+        String result = RomanNumerals.convert(20);
+
+        assertEquals("XX", result);
+    }
 }
