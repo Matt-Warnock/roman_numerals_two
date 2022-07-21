@@ -28,4 +28,11 @@ class RomanNumeralsTest {
         assertEquals("III", result);
     }
 
+    @Test
+    @DisplayName("converts 5 to V")
+    void convertFive() {
+        String result = RomanNumerals.convert(5);
+
+        assertEquals("V", result);
+    }
 }
