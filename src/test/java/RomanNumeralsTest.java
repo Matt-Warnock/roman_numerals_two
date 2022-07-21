@@ -42,4 +42,12 @@ class RomanNumeralsTest {
 
         assertEquals("VI", result);
     }
+
+    @Test
+    @DisplayName("converts 10 to X")
+    void convertTen() {
+        String result = RomanNumerals.convert(10);
+
+        assertEquals("X", result);
+    }
 }

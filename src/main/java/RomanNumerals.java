@@ -1,7 +1,12 @@
 public class RomanNumerals {
     public static String convert(int number) {
-        if (number == 5) { return "V"; }
+        String result = new String();
 
-        return "I".repeat(number);
+        if (number >= 5) {
+            result = "V";
+            number -= 5;
+        }
+        result +=  "I".repeat(number);
+        return result;
     }
 }
