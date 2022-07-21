@@ -20,5 +20,12 @@ class RomanNumeralsTest {
 
         assertEquals("II", result);
     }
+    @Test
+    @DisplayName("converts 3 to III")
+    void convertThree() {
+        String result = RomanNumerals.convert(3);
+
+        assertEquals("III", result);
+    }
 
 }
