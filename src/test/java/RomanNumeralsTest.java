@@ -12,4 +12,13 @@ class RomanNumeralsTest {
 
         assertEquals("I", result);
     }
+
+    @Test
+    @DisplayName("converts 2 to II")
+    void convertTwo() {
+        String result = RomanNumerals.convert(2);
+
+        assertEquals("II", result);
+    }
+
 }
