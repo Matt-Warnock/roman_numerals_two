@@ -2,8 +2,9 @@ public class RomanNumerals {
     public static String convert(int number) {
         String result = new String();
 
-        if (number >= 10) {
-            result = "X";
+
+        while (number >= 10) {
+            result += "X";
             number -= 10;
         }
 
