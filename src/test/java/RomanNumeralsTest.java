@@ -35,4 +35,11 @@ class RomanNumeralsTest {
 
         assertEquals("V", result);
     }
+    @Test
+    @DisplayName("converts 6 to VI")
+    void convertSix() {
+        String result = RomanNumerals.convert(6);
+
+        assertEquals("VI", result);
+    }
 }
